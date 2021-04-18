@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZmlsaXA1NTAiLCJhIjoiY2toaG9pMncwMGpvdDJybzF2MTc2NHBuZSJ9.Qo5TCjwvrR2OT6sl-R8UmQ</string>
+    <string name="msg_long_press_map_to_place_waypoint">Long press on the map to place a waypoint</string>
+    <string name="popup_menu_title">Save new favorite destination</string>
+    <string name="etSaveName_popup_menu">Enter name</string>
+    <string name="btnCloseDialog_popup_menu">CLOSE</string>
+    <string name="btnSaveDestionation">SAVE</string>
+    <string name="tvKmh_activity_main">km/h</string>
+    <string name="tvS_activity_main">s</string>
+    <string name="tvFuelLevel_activity_main">Fuel level: </string>
+    <string name="tvOutsideTemperature_activity_main">Outside temperature:</string>
 </resources>

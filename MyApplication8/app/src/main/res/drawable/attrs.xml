@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <resources>
+
+        <declare-styleable android:name="SeekArc">
+            <attr android:name="thumb" android:format="reference" />
+            <attr android:name="thumbOffset" android:format="dimension" />
+            <attr android:name="max" android:format="integer" />
+            <attr android:name="progressWidth" android:format="dimension" />
+            <attr android:name="arcWidth" android:format="dimension" />
+            <attr android:name="progress" android:format="integer" />
+            <attr android:name="rotation" android:format="integer" />
+            <attr android:name="startAngle" android:format="integer" />
+            <attr android:name="sweepAngle" android:format="integer" />
+            <attr android:name="arcColor" android:format="color" />
+            <attr android:name="progressColor" android:format="color" />
+            <attr android:name="roundEdges" android:format="boolean" />
+            <attr android:name="touchInside" android:format="boolean" />
+            <attr android:name="clockwise" android:format="boolean" />
+            <attr android:name="enabled" android:format="boolean" />
+        </declare-styleable>
+
+        <declare-styleable android:name="SeekArcTheme">
+            <attr android:name="seekArcStyle" android:format="reference"></attr>
+        </declare-styleable>
+
+    </resources>
+
+</selector>

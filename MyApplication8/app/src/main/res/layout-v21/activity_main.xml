@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".view.MainActivity"
+    tools:ignore="MissingClass">
+
+
+    <TextView
+        android:id="@+id/tvPark"
+        android:layout_width="67dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="P"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <TextView
+        android:id="@+id/tvNeutral"
+        android:layout_width="67dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="N"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <TextView
+        android:id="@+id/tvDrive"
+        android:layout_width="67dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="D"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
+
+    <TextView
+        android:id="@+id/tvReverse"
+        android:layout_width="67dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="R"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <TextView
+        android:id="@+id/tvOutsideTemperature"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="@string/tvOutsideTemperature_activity_main"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFuel"
+        android:layout_width="121dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565"
+        app:srcCompat="@drawable/fuel" />
+
+    <ProgressBar
+        android:id="@+id/pbBatteryLevel"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="95dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="884dp"
+        android:rotation="-90"
+        android:scaleX="1.1"
+        android:scaleY="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <TextView
+        android:id="@+id/tvFuelLevel"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/tvFuelLevel_activity_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="203dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivParkingBrake"
+        android:layout_width="72dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932"
+        app:srcCompat="@drawable/p_brake" />
+
+    <ImageView
+        android:id="@+id/ivIgnition"
+        android:layout_width="79dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833"
+        app:srcCompat="@drawable/ignition" />
+
+    <com.triggertrap.seekarc.SeekArc
+        android:id="@+id/saSpeed"
+        android:layout_width="350dp"
+        android:layout_height="253dp"
+        android:layout_gravity="center"
+        android:padding="35dp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintVertical_bias="0.157"
+        app:progressWidth="20dp"
+        seekarc:arcWidth="20dp"
+        seekarc:enabled="false"
+        seekarc:layout_constraintBottom_toBottomOf="parent"
+        seekarc:layout_constraintEnd_toEndOf="parent"
+        seekarc:layout_constraintStart_toStartOf="parent"
+        seekarc:layout_constraintTop_toTopOf="parent"
+        seekarc:rotation="180"
+        seekarc:roundEdges="true"
+        seekarc:startAngle="30"
+        seekarc:sweepAngle="300"
+        seekarc:touchInside="true" />
+
+    <TextView
+        android:id="@+id/tv230"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="188dp"
+        android:text="230"
+        android:textSize="30sp"
+        seekarc:layout_constraintStart_toStartOf="@+id/saSpeed"
+        seekarc:layout_constraintTop_toTopOf="@+id/saSpeed" />
+
+    <TextView
+        android:id="@+id/tv90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:text="90"
+        android:textSize="30sp"
+        seekarc:layout_constraintStart_toStartOf="@+id/saSpeed"
+        seekarc:layout_constraintTop_toTopOf="@+id/saSpeed" />
+
+    <TextView
+        android:id="@+id/tv160"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="4dp"
+        android:text="160"
+        android:textSize="30px"
+        seekarc:layout_constraintStart_toStartOf="@+id/saSpeed"
+        seekarc:layout_constraintTop_toTopOf="@+id/saSpeed" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="158dp"
+        android:layout_height="95dp"
+        android:gravity="center"
+        android:text="Hello World!"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/saSpeed"
+        app:layout_constraintEnd_toEndOf="@+id/saSpeed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/saSpeed"
+        app:layout_constraintTop_toTopOf="@+id/saSpeed" />
+
+    <TextView
+        android:id="@+id/tv120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="480dp"
+        android:layout_marginLeft="480dp"
+        android:layout_marginTop="4dp"
+        android:text="120"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="102dp"
+        android:text="50"
+        android:textSize="30px"
+        seekarc:layout_constraintStart_toStartOf="@+id/saSpeed"
+        seekarc:layout_constraintTop_toTopOf="@+id/saSpeed" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="200dp"
+        android:text="10"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/saSpeed"
+        app:layout_constraintTop_toTopOf="@+id/saSpeed" />
+
+    <TextView
+        android:id="@+id/tv200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="302dp"
+        android:layout_marginTop="102dp"
+        android:text="200"
+        android:textSize="30sp"
+        seekarc:layout_constraintStart_toStartOf="@+id/saSpeed"
+        seekarc:layout_constraintTop_toTopOf="@+id/saSpeed" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphSpeed"
+        android:layout_width="290dip"
+        android:layout_height="260dip"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/tvS_activity_main"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPark"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKmh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="704dp"
+        android:text="@string/tvKmh_activity_main"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/graphSpeed" />
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="600dp"
+        android:layout_height="215dp"
+        android:layout_marginLeft="215dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        mapbox:mapbox_cameraZoom="18">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/favBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="560dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/ic_favorite_shadow" />
+
+        <Button
+            android:id="@+id/buttonStartNav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="150dp"
+            android:text="Go"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonEndNav"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="150dp"
+            android:text="STOP"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+            <com.mapbox.navigation.ui.map.WayNameView
+                android:id="@+id/wNVDurationRemaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="175dp"/>
+
+            <com.mapbox.navigation.ui.map.WayNameView
+                android:id="@+id/wNVDistanceRemaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="145dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabOpenDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="@string/tvOutsideTemperature_activity_main"
+            android:layout_marginLeft="555dp"
+            android:layout_marginTop="160dp"
+            app:fabCustomSize="30dp" />
+
+        <com.mapbox.navigation.ui.instruction.InstructionView
+            android:id="@+id/instructionView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="7dp"
+            tools:layout_editor_absoluteX="-269dp"
+            tools:layout_editor_absoluteY="42dp">
+
+            <ProgressBar
+                android:id="@+id/route_retrieval_progress_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="90dp"
+                android:visibility="invisible" />
+        </com.mapbox.navigation.ui.instruction.InstructionView>
+        </FrameLayout>
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <!--<com.mapbox.navigation.ui.summary.SummaryBottomSheet
+        android:id="@+id/wayNameView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
